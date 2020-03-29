@@ -35,6 +35,6 @@ function currentLine(line) {
       }
      currentLineString += " " + (i + 1) + ". " + line[i] + ", ";
     }
-  return currentLineString.length - 1;
+  return currentLineString;
   }
 }

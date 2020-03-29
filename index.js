@@ -33,7 +33,7 @@ function currentLine(line) {
       if(i === line.length - 1) {
         currentLineString += " " + (i + 1) + ". " + line[i];
       }
-      
+
     }
   return currentLineString;
   }

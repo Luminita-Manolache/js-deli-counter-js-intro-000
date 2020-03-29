@@ -32,7 +32,9 @@ function currentLine(line) {
     for(var i = 0; i < line.length; i++) {
       currentLineString += " " + (i + 1) + ". " + line[i] + ", ";
       if(i === line.length - 1) {
-        var removeComa = currentLineString.splice(-1);
+        var removeComa;
+        removeComa = currentLineString.splice(-1);
+        return removeComa;
       }
     }
   return currentLineString;

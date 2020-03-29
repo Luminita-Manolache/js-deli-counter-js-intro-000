@@ -29,8 +29,11 @@ function currentLine(line) {
     return currentLineString;
   }else {
     currentLineString += ": ";
-    for(var i = 0; i < line.length - 1; i++) {
+    for(var i = 0; i < line.length; i++) {
       currentLineString += " " + (i + 1) + ". " + line[i] + ", ";
+      if(i == line.length - 1) {
+        currentLineString += " " + (i + 1) + ". " + line[i] + "";
+      }
     }
   return currentLineString;
   }

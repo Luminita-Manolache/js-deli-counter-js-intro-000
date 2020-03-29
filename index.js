@@ -32,10 +32,10 @@ function currentLine(line) {
     for(var i = 0; i < line.length; i++) {
       if(i === line.length - 1) {
         var newStr;
-        newStr = currentLineString += " " + (i + 1) + ". " + line[i];
+        newStr = currentLineString += "" + (i + 1) + ". " + line[i];
         return newStr;
       }
-     currentLineString += " " + (i + 1) + ". " + line[i] + ", ";
+     currentLineString += "" + (i + 1) + ". " + line[i] + ", ";
     }
   return currentLineString;
   }

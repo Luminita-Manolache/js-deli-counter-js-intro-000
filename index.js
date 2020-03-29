@@ -31,7 +31,9 @@ function currentLine(line) {
     currentLineString += ": ";
     for(var i = 0; i < line.length; i++) {
       if(i === line.length - 1) {
-        currentLineString += " " + (i + 1) + ". " + line[i];
+        var newStr;
+        newStr = currentLineString += " " + (i + 1) + ". " + line[i];
+        return newStr;
       }
      currentLineString += " " + (i + 1) + ". " + line[i] + ", ";
     }

@@ -32,8 +32,7 @@ function currentLine(line) {
     for(var i = 0; i < line.length; i++) {
       currentLineString += " " + (i + 1) + ". " + line[i] + ", ";
       if(i < line.length - 1) {
-        var r = currentLineString.splice(currentLineString.length - 1);
-        return r;
+        currentLineString += " " + (i + 1) + ". " + line[i] + "";
       }
     }
   return currentLineString;

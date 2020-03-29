@@ -21,7 +21,7 @@ function nowServing(deliLine) {
 
 function currentLine(line) {
   var str;
-  str = line.join(", ").slice(0, -1);
+  str = line.join(", ");
   var currentLineString = "The line is currently";
 
   if(line == 0) {
@@ -30,10 +30,10 @@ function currentLine(line) {
   }else {
     currentLineString += ": ";
     for(var i = 0; i < line.length; i++) {
-      currentLineString += " " + (i + 1) + ". " + line[i] + ", ";
       if(i === line.length - 1) {
         currentLineString += " " + (i + 1) + ". " + line[i];
       }
+      currentLineString += " " + (i + 1) + ". " + line[i] + ", ";
     }
   return currentLineString;
   }

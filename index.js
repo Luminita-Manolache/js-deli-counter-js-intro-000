@@ -38,4 +38,3 @@ function currentLine(line) {
   return currentLineString;
   }
 }
-
